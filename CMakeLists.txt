@@ -52,8 +52,6 @@ set(RETRO_FILES
 if(NOT PLATFORM)
     if(WIN32) # THIS ASSUMES VCPKG OR SOURCES !!!!!!!
         set(PLATFORM "Windows" CACHE STRING "The platform to compile for.")
-    elseif(ANDROID)
-        set(PLATFORM "Android" CACHE STRING "The platform to compile for.")
     else()
         set(PLATFORM ${CMAKE_SYSTEM_NAME} CACHE STRING "The platform to compile for.")
     endif()
